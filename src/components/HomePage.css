@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0e6ff; /* Light purple background */
+  }
+  
+  .home-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8e44ad; /* Purple header */
+    padding: 15px 20px;
+    width: 100%;
+    color: white;
+  }
+  
+  .logo {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .search-bar {
+    display: flex;
+  }
+  
+  .search-bar input {
+    padding: 10px;
+    border: none;
+    border-radius: 30px 0 0 30px; /* Rounded corners */
+    outline: none;
+  }
+  
+  .search-bar button {
+    background-color: #6a2c91; /* Darker purple for button */
+    border: none;
+    color: #fff;
+    padding: 15px 450px;
+    border-radius: 0 50px 20px 0; /* Rounded corners */
+    cursor: pointer;
+  }
+  
+  .header-icons .icon {
+    margin: 0 15px;
+    font-size: 28px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .main-content {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .hero-section {
+    background-color: #d1c4e9; /* Lighter purple background */
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .shop-button {
+    background-color: #8e44ad; /* Purple button */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .shop-button:hover {
+    background-color: #6a2c91; /* Darker purple on hover */
+  }
+  
+  .featured-products {
+    margin-top: 20px;
+  }
+  
+  .product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Allows wrapping to next line */
+  }
+  
+  .product-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05); /* Scale up on hover */
+  }
+  
+  .product-card img {
+    border-radius: 10px; /* Rounded corners for images */
+  }
+  
+  .add-to-cart-button {
+    background-color: #8e44ad; /* Purple button */
+    border: none;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .add-to-cart-button:hover {
+    background-color: #6a2c91; /* Darker purple on hover */
+  }
+  
+  .fun-facts {
+    margin-top: 20px;
+    background-color: #e1bee7; /* Light pinkish-purple */
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .footer {
+    background-color: #8e44ad; /* Purple footer */
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    color: white;
+  }
+  
