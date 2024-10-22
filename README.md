@@ -1,2 +1,2 @@
-# Authn-React-DRF-
-Authentication through React.js and DRF
+# Authn-React
+Authentication through React.js 
