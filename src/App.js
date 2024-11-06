@@ -5,6 +5,8 @@ import Register from './components/register';
 import Login from './components/login';
 import VerifyOtp from './components/verify-otp';
 import HomePage from './components/HomePage';
+import AdminProductUpload from './components/pu';
+import ProductList from './components/ProductList';
 import './App.css';
 
 function App() {
@@ -18,6 +20,8 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/verify-otp" element={<VerifyOtp userId={userId} />} /> 
           <Route path="/HomePage" element={<HomePage />} />
+          <Route path="/pu" element={<AdminProductUpload />} />
+          <Route path="/ProductList" element={<ProductList />} />
         </Routes>
       </div>
     </Router> 

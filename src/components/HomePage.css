@@ -1,137 +1,77 @@
-body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #f0e6ff; /* Light purple background */
-  }
-  
-  .home-page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #8e44ad; /* Purple header */
-    padding: 15px 20px;
-    width: 100%;
-    color: white;
-  }
-  
-  .logo {
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .search-bar {
-    display: flex;
-  }
-  
-  .search-bar input {
-    padding: 10px;
-    border: none;
-    border-radius: 30px 0 0 30px; /* Rounded corners */
-    outline: none;
-  }
-  
-  .search-bar button {
-    background-color: #6a2c91; /* Darker purple for button */
-    border: none;
-    color: #fff;
-    padding: 15px 450px;
-    border-radius: 0 50px 20px 0; /* Rounded corners */
-    cursor: pointer;
-  }
-  
-  .header-icons .icon {
-    margin: 0 15px;
-    font-size: 28px;
-    color: #fff;
-    cursor: pointer;
-  }
-  
-  .main-content {
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .hero-section {
-    background-color: #d1c4e9; /* Lighter purple background */
-    padding: 30px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-  }
-  
-  .shop-button {
-    background-color: #8e44ad; /* Purple button */
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .shop-button:hover {
-    background-color: #6a2c91; /* Darker purple on hover */
-  }
-  
-  .featured-products {
-    margin-top: 20px;
-  }
-  
-  .product-grid {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap; /* Allows wrapping to next line */
-  }
-  
-  .product-card {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s;
-  }
-  
-  .product-card:hover {
-    transform: scale(1.05); /* Scale up on hover */
-  }
-  
-  .product-card img {
-    border-radius: 10px; /* Rounded corners for images */
-  }
-  
-  .add-to-cart-button {
-    background-color: #8e44ad; /* Purple button */
-    border: none;
-    color: #fff;
-    padding: 8px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .add-to-cart-button:hover {
-    background-color: #6a2c91; /* Darker purple on hover */
-  }
-  
-  .fun-facts {
-    margin-top: 20px;
-    background-color: #e1bee7; /* Light pinkish-purple */
-    padding: 20px;
-    border-radius: 10px;
-  }
-  
-  .footer {
-    background-color: #8e44ad; /* Purple footer */
-    padding: 10px;
-    width: 100%;
-    text-align: center;
-    color: white;
-  }
-  
+/* General Styling for Home Page */
+.homepage-container {
+  padding: 40px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  text-align: center;
+}
+
+.homepage-header {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #1a73e8;
+}
+
+.homepage-subtitle {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+/* Styling for Product List */
+.product-list-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.product-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  width: 220px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.product-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.product-card h2 {
+  font-size: 18px;
+  margin: 10px 0 5px;
+  color: #333;
+}
+
+.product-card p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.product-card .price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #1a73e8;
+  margin-top: 8px;
+}
