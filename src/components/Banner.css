@@ -1,0 +1,40 @@
+/* src/components/Banner.css */
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffe0e0;
+  padding: 50px 0;
+  color: #ff6b6b;
+  text-align: center;
+  font-family: 'Comic Sans MS';
+  overflow: hidden;
+  transition: opacity 1s ease-in-out; /* Smooth transition */
+}
+
+.banner-content {
+  max-width: 500px;
+}
+
+.banner h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.banner p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.shop-now-btn {
+  background-color: #ff6b6b;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.shop-now-btn:hover {
+  background-color: #ff8c8c;
+}

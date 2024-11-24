@@ -1,0 +1,76 @@
+.cart-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  position: relative; /* To position the delete icon correctly */
+}
+
+.cart-item-image {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.item-details {
+  flex-grow: 1;
+}
+
+.remove-btn {
+  background-color: transparent;
+  color: #f44336;
+  border: none;
+  cursor: pointer;
+  font-size: 20px; /* Icon size */
+  position: absolute;
+  right: 10px; /* Position it at the right of the product */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%);
+}
+
+.remove-btn:hover {
+  color: darkred;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+}
+
+.delete-button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.delete-button:hover {
+  background-color: #d32f2f;
+}
+
+.buy-now-button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.buy-now-button:hover {
+  background-color: #d32f2f;
+}
+
+.cart-summary {
+  margin-top: 20px;
+  text-align: center;
+}

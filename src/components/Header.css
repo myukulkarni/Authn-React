@@ -1,0 +1,53 @@
+/* src/components/Header.css */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fdd2b2;
+    padding: 10px 20px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff6b6b;
+  }
+  
+  .nav a {
+    margin: 0 10px;
+    color: #ff6b6b;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .nav a:hover {
+    color: #ffa07a;
+  }
+  /* Profile Icon Styles */
+.profile-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #fdd2b2;; /* Blue background for the circle */
+  border-radius: 50%; /* Make it circular */
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+  margin-left: 20px; /* Space between other icons and profile */
+}
+
+/* Profile Icon on Hover */
+.profile-icon:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.nav a:hover {
+  color: #007bff; /* Change color of other links on hover */
+}
+.nav {
+  display: flex; /* Ensure all links are in a row */
+  align-items: center; /* Align all icons vertically */
+}

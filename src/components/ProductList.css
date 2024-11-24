@@ -14,12 +14,32 @@
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 16px;
-    width: 200px;
-    text-align: left;
+    width: 300px;
+    text-align: center; /* Center-align content */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add slight shadow for aesthetics */
 }
 
+
 .product-image {
-    width: 100%;
-    height: auto;
+    width: 100%; /* Make the image fit the width of the container */
+    height: 200px; /* Set a fixed height to make all cards consistent */
+    object-fit: cover; /* Ensures the image is cropped evenly to fit */
     border-radius: 8px;
+}
+
+
+.buy-now-button {
+    background-color: #ff6b6b;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.buy-now-button:hover {
+    background-color: #ff4c4c;
 }

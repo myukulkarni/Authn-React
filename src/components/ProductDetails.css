@@ -1,0 +1,116 @@
+/* ProductDetails.css */
+
+.product-details-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.product-image-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    flex: 1 1 40%;
+    max-width: 500px;
+}
+
+.main-image-container {
+    flex: 1;
+    max-width: 500px; /* Set the size of the main image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-product-image {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.thumbnail-images-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.thumbnail-image {
+    width: 60px; /* Thumbnail size */
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.thumbnail-image:hover {
+    transform: scale(1.1);
+}
+
+.product-info-container {
+    flex: 1 1 50%;
+    max-width: 500px;
+    margin-top: 20px;
+}
+
+.product-info-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.product-description {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.price {
+    font-size: 1.5rem;
+    color: #d32f2f;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+}
+
+.shortlist-button,
+.add-to-cart-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.shortlist-button {
+    background-color: #f5f5f5;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+.shortlist-button.shortlisted {
+    background-color: #ff6666;
+    color: white;
+}
+
+.add-to-cart-button {
+    background-color: #ff6666;
+    color: white;
+    border: 1px solid #ff6666;
+}
+
+.add-to-cart-button.in-cart {
+    background-color: #f44336;
+    color: white;
+}

@@ -1,0 +1,73 @@
+/* Profile container styling */
+.profile-container {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-details {
+  text-align: center;
+}
+
+.profile-details h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.profile-details p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.profile-details p strong {
+  color: #333;
+}
+
+/* Button styling */
+.buttons {
+  display: flex;
+  flex-direction: column; /* Align buttons vertically */
+  gap: 20px; /* Add some space between buttons */
+  margin-top: 30px; /* Add margin at the top */
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 200px; /* Set a consistent width for buttons */
+  margin: 0 auto; /* Center buttons */
+}
+
+.logout-btn {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.logout-btn:hover {
+  background-color: #c0392b;
+}
+
+.continue-shopping-btn {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.continue-shopping-btn:hover {
+  background-color: #c0392b;
+}
+
+/* Error message styling */
+.error {
+  color: red;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
