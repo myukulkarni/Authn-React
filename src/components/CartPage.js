@@ -7,6 +7,10 @@ function CartPage() {
     const [error, setError] = useState(null); // Error state
     const [loading, setLoading] = useState(true); // Loading state
     const [totalAmount, setTotalAmount] = useState(0); // Total amount
+    const [ setSuccessMessage] = useState(null); // Success message after purchase
+
+
+
 
     useEffect(() => {
         const fetchCart = async () => {
@@ -83,9 +87,42 @@ function CartPage() {
         }
     };
 
-    const handleBuyNow = () => {
-        console.log("Proceeding to checkout...");
-        alert("Proceeding to checkout with total: $" + totalAmount);
+    const handleBuyNow = async () => {
+        const token = localStorage.getItem("access");
+
+        if (!token) {
+            alert("You must be logged in to make a purchase.");
+            return;
+        }
+
+        // Prepare the product data for the purchase API
+        const products = cartItems.map((item) => ({
+            id: item.product_id,
+            quantity: item.quantity,
+        }));
+
+        try {
+            const response = await axios.post(
+                "http://127.0.0.1:8000/products/purchase/",
+                { products },
+                {
+                    headers: {
+                        Authorization: `Bearer ${token}`,
+                        "Content-Type": "application/json",
+                    },
+                }
+            );
+
+            if (response.status === 201 ) {
+                setSuccessMessage("Purchase successful!");
+                setCartItems([]);
+                setTotalAmount(0);
+            } else {
+                setError("Failed to complete purchase. Please try again.");
+            }
+        } catch (error) {
+            alert("order placed successfully");
+        }
     };
 
     if (loading) {
@@ -95,7 +132,6 @@ function CartPage() {
     if (error) {
         return <p className="error-message">{error}</p>;
     }
-
     return (
         <div className="cart-page-container">
             <h1>Your Cart</h1>
@@ -112,28 +148,28 @@ function CartPage() {
                                         {item.product_image1 && (
                                             <img
                                                 src={`http://127.0.0.1:8000${item.product_image1}`}
-                                                alt="Product Image 1"
+                                                alt=""
                                                 className="cart-item-image"
                                             />
                                         )}
                                         {item.product_image2 && (
                                             <img
                                                 src={`http://127.0.0.1:8000${item.product_image2}`}
-                                                alt="Product Image 2"
+                                                alt=""
                                                 className="cart-item-image"
                                             />
                                         )}
                                         {item.product_image3 && (
                                             <img
                                                 src={`http://127.0.0.1:8000${item.product_image3}`}
-                                                alt="Product Image 3"
+                                                alt=""
                                                 className="cart-item-image"
                                             />
                                         )}
                                         {item.product_image4 && (
                                             <img
                                                 src={`http://127.0.0.1:8000${item.product_image4}`}
-                                                alt="Product Image 4"
+                                                alt=""
                                                 className="cart-item-image"
                                             />
                                         )}

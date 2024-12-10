@@ -1,0 +1,57 @@
+/* ConfirmationPage.css */
+.confirmation-page-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .confirmation-section {
+    margin-bottom: 30px;
+  }
+  
+  .confirmation-cart-items {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .confirmation-cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .confirmation-item-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+  
+  .address-details {
+    background-color: #fafafa;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  
+  .confirmation-actions {
+    margin-top: 20px;
+  }
+  
+  .place-order-button,
+  .download-pdf-button,
+  .go-to-orders-button {
+    background-color: teal;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+  }
+  
+  .place-order-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  

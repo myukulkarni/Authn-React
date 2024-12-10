@@ -9,7 +9,7 @@ import educationalImage from "../assets/images/educational.png";
 import essentialImage from "../assets/images/essential.png";
 import girlImage from "../assets/images/girl.png";
 import boyImage from "../assets/images/boy.png";
-
+import SHOESImage from "../assets/images/SHOES.png"
 
 
 
@@ -22,7 +22,10 @@ function Categories() {
     { name: "Educational", image: educationalImage },
     { name: "girls", image: girlImage },
     { name: "boys", image: boyImage },
+    { name: "Shoes", image: SHOESImage },
+    
   ];
+  
 
   return (
     <section className="categories" id="categories">

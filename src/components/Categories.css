@@ -4,8 +4,8 @@
   justify-content: center;
   gap: 20px;
   padding: 20px;
-  background-color: #ffe7e7;
-  font-family: 'Comic Sans MS'
+  /* background-color: rgb(223, 220, 220); */
+  font-family: 'Arial', sans-serif;
 }
 
 .category-card {
@@ -44,10 +44,10 @@
 }
 
 .text-box {
-  background-color: #f3e6e9; /* Soft color */
+  background-color: #ffe0e0; /* Soft color */
   padding: 8px;
   border-radius: 20px;
-  width: 100%;
+  width: auto;
   text-align: center;
   margin-top: -30px; /* Adjust to overlap with the circle */
   z-index: 0; /* Ensure text box is under the circle */

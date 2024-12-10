@@ -1,0 +1,88 @@
+/* Overall Container */
+.checkout-container {
+    width: 90%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: 'Arial', sans-serif;
+}
+
+/* Title */
+.checkout-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Items List */
+.checkout-items {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px;
+}
+
+.checkout-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.item-name {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #555;
+}
+
+.item-quantity {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* Summary Section */
+.checkout-summary {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+}
+
+.checkout-summary p {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Confirm Order Button */
+.confirm-order-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.confirm-order-button:hover {
+    background-color: #0056b3;
+}
+
+/* Error and Loading Messages */
+.loading-message,
+.error-message {
+    text-align: center;
+    color: #d9534f;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 20px 0;
+}

@@ -2,10 +2,6 @@
     max-width: 600px;
     margin: 2rem auto;
     padding: 2rem;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
@@ -16,13 +12,19 @@ h1 {
 }
 
 .update-product-form {
+    
+    margin-left: 70px;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    
 }
 
 .form-group {
     display: flex;
+    padding-right: 5px;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
 

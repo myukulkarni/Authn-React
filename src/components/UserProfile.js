@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import jwt_decode from "jwt-decode"; // Correct import for version 2.x.x
 import './UserProfile.css'; // Import the CSS file for styling
+import { FaShoppingBag } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const UserProfile = () => {
   const [profile, setProfile] = useState(null);
@@ -99,6 +101,9 @@ const UserProfile = () => {
           <div className="buttons">
             <button onClick={handleLogout} className="logout-btn">Logout</button>
             <button onClick={handleContinueShopping} className="continue-shopping-btn">Continue Shopping</button>
+            <Link to="/order" className="profile-icon">
+          <FaShoppingBag /> {/* Icon for User Profile */}
+        </Link>
           </div>
         </div>
       ) : (

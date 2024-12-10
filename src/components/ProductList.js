@@ -68,7 +68,7 @@ function ProductList() {
                                 {product.image1 ? (
                                     <img
                                         src={`http://127.0.0.1:8000${product.image1}`}
-                                        alt={`${product.name} Image`}
+                                        alt={`${product.name} `}
                                         className="product-image"
                                     />
                                 ) : (

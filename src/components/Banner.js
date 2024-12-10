@@ -1,28 +1,28 @@
 import React, { useState, useEffect } from "react";
 import "./Banner.css";
+import banner4Image from "../assets/images/banner1.jpg"; // Import images
+import banner2Image from "../assets/images/banner2.jpg";
+import banner3Image from "../assets/images/banner3.jpg";
+
 
 function Banner() {
   const [currentBanner, setCurrentBanner] = useState(0);
   const banners = [
     {
-      title: "One Stop Shop for Kids",
-      description: "Your go-to store for everything your kid needs!",
-      buttonText: "Shop Now",
+      image: banner3Image
+      
     },
     {
-      title: "Exclusive Offers on New Arrivals",
-      description: "Grab exciting offers on our latest collection!",
-      buttonText: "Explore Offers",
+      image: banner2Image
+     
     },
     {
-      title: "Festive Season Discounts",
-      description: "Enjoy up to 50% off on selected items!",
-      buttonText: "Check Discounts",
+      image: banner4Image
+     
     },
     {
-      title: "Special Deals for Members",
-      description: "Join now and get special member-only discounts!",
-      buttonText: "Join Now",
+      image: "https://via.placeholder.com/800x400?text=Special+Deals+for+Members",
+      alt: "Special Deals for Members",
     },
   ];
 
@@ -36,11 +36,11 @@ function Banner() {
 
   return (
     <section className="banner">
-      <div className="banner-content">
-        <h1>{banners[currentBanner].title}</h1>
-        <p>{banners[currentBanner].description}</p>
-        <button className="shop-now-btn">{banners[currentBanner].buttonText}</button>
-      </div>
+      <img
+        src={banners[currentBanner].image}
+        alt={banners[currentBanner].alt}
+        className="banner-image"
+      />
     </section>
   );
 }

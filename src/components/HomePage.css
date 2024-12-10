@@ -4,7 +4,7 @@
   font-family: Arial, sans-serif;
   color: #333;
   text-align: center;
-  font-family: 'Comic Sans MS'
+  font-family: 'Arial', sans-serif;
 }
 
 .homepage-header {
@@ -296,4 +296,19 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.shortlist-button {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.shortlist-button.liked {
+  color: red; /* Red heart when liked */
+}
+
+.shortlist-button:not(.liked) {
+  color: gray; /* Gray heart when not liked */
 }

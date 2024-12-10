@@ -13,6 +13,10 @@ import Categories from "./components/Categories";
 import CartPage from "./components/CartPage"; // Import the CartPage component
 import UserProfile from "./components/UserProfile"; // Import userprofile
 import ProductDetails from "./components/ProductDetails"; // Import the ProductDetails component
+import ShortList from "./components/ShortList"; // Import the ProductDetails component
+import OrderHistory from "./components/order";
+import CheckoutPage from "./components/CheckoutPage";
+import ConfirmationPage from "./components/ConfirmationPage";
 import "./App.css";
 
 function Layout() {
@@ -41,6 +45,11 @@ function Layout() {
         <Route path="/admin" element={<ProductList />} /> {/* Admin Product Management */}
         <Route path="/update-product/:id" element={<UpdateProduct />} /> {/* Update Product Page */}
         <Route path="/cart" element={<CartPage />} /> {/* Cart Page Route */}
+        <Route path="/ShortList" element={<ShortList />} /> {/* Cart Page Route */}
+        <Route path="/order" element={<OrderHistory/>} />
+        <Route path="/CheckoutPage" element={<CheckoutPage/>} />
+        <Route path="/ConfirmationPage" element={<ConfirmationPage/>} />
+
 
         {/* New Routes for Profile */}
         <Route path="/profile" element={<UserProfile />} /> {/* User Profile Page */}

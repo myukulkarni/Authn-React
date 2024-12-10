@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom'; // Import useParams to access the product ID from the URL
 import './ProductDetails.css'; // Import the CSS file for styling
+import ShareButton from './Share';
 
 function ProductDetails() {
     const { productId } = useParams(); // Get the product ID from the URL
@@ -85,7 +86,7 @@ function ProductDetails() {
                     {product.image1 && (
                         <img
                             src={`http://127.0.0.1:8000${product.image1}`}
-                            alt="Image 1"
+                            alt=""
                             className="thumbnail-image"
                             onClick={() => setMainImage(product.image1)} // Set as main image on click
                         />
@@ -93,7 +94,7 @@ function ProductDetails() {
                     {product.image2 && (
                         <img
                             src={`http://127.0.0.1:8000${product.image2}`}
-                            alt="Image 2"
+                            alt=""
                             className="thumbnail-image"
                             onClick={() => setMainImage(product.image2)} // Set as main image on click
                         />
@@ -101,7 +102,7 @@ function ProductDetails() {
                     {product.image3 && (
                         <img
                             src={`http://127.0.0.1:8000${product.image3}`}
-                            alt="Image 3"
+                            alt=""
                             className="thumbnail-image"
                             onClick={() => setMainImage(product.image3)} // Set as main image on click
                         />
@@ -109,7 +110,7 @@ function ProductDetails() {
                     {product.image4 && (
                         <img
                             src={`http://127.0.0.1:8000${product.image4}`}
-                            alt="Image 4"
+                            alt=""
                             className="thumbnail-image"
                             onClick={() => setMainImage(product.image4)} // Set as main image on click
                         />
@@ -135,6 +136,7 @@ function ProductDetails() {
                     >
                         {cart ? "🛒 In Cart" : "🛍️ Add to Cart"}
                     </button>
+                    <ShareButton productUrl={`http://127.0.0.1:8000/products/product/${product.id}`} />
                 </div>
             </div>
         </div>
